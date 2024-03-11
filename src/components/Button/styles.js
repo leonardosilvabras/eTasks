@@ -1,37 +1,25 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.button`
   background-color: ${({ theme }) => theme.COLORS.BLUE_300};
   color: ${({ theme }) => theme.COLORS.BLUE_600};
-
+  
   border: 0;
-  height: 3.5rem;
-  padding: 0 1rem;
+  height: 56px;
+  padding: 0 16px;
   font-weight: 500;
-  border-radius: 0.43rem;
-
+  border-radius: 7px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 
   > span {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   > svg {
-    font-size: 1.37rem;
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.XS}) {
-    height: 3rem;
-    padding: 0 0.5rem;
-    > span {
-      font-size: 0.8rem;
-    }
-
-    > svg {
-      font-size: 1rem;
-    }
+    font-size: 22px;
   }
 `;

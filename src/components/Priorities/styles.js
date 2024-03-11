@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.section`
-  padding: 2rem;
+  padding: 32px;
 `;
 
 export const Header = styled.header`
@@ -11,7 +10,7 @@ export const Header = styled.header`
   align-items: center;
 
   > h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: ${({ theme }) => theme.COLORS.RED_200};
     display: flex;
     align-items: center;
@@ -24,18 +23,13 @@ export const Header = styled.header`
 `;
 
 export const Tasks = styled.div`
-  border: 1px dashed ${({ theme }) => theme.COLORS.RED_200};
+  border: 1px dashed  ${({ theme }) => theme.COLORS.RED_200};
   min-height: 154px;
-  border-radius: 0.43rem;
+  border-radius: 7px;
   margin-top: 16px;
 
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   padding: 24px;
   flex-wrap: wrap;
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    justify-content: center;
-    align-items: center;
-  }
 `;
