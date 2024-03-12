@@ -18,9 +18,11 @@ export function SideMenu({ menuIsOpen, onCloseMenu }) {
           <CheckCircle /> e-Tasks
         </Title>
 
-        <Button onClick={onCloseMenu}>
-          <X />
-        </Button>
+        {menuIsOpen && (
+          <Button onClick={onCloseMenu}>
+            <X />
+          </Button>
+        )}
       </Header>
 
       <Nav>
@@ -39,10 +41,10 @@ export function SideMenu({ menuIsOpen, onCloseMenu }) {
       </Nav>
 
       <Footer>
-        <img src="https://github.com/rodrigorgtic.png" alt="Foto do usuário" />
+        <img src="https://github.com/leonardosilvabras.png" alt="Foto do usuário" />
         <div>
-          <strong>Rodrigo Gonçalves</strong>
-          <small>rodrigo@email.com</small>
+          <strong>Leonardo Silva</strong>
+          <small>leonardo@email.com</small>
         </div>
 
         <Button type="button">

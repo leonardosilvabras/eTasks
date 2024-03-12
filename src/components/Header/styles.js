@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {DEVICE_BREAKPOINTS} from "../../styles/deviceBreakpoints"
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.header`
   display: flex;
@@ -15,6 +15,14 @@ export const Container = styled.header`
   > h1 {
     font-size: 2rem;
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.XS}) {
+    > h1 {
+      font-size: 1.5rem;
+      flex: 1;
+      padding: 0 1rem;
+    }
+  }
 `;
 
 export const Menu = styled.button`
@@ -27,7 +35,13 @@ export const Menu = styled.button`
     color: ${({ theme }) => theme.COLORS.BLUE_200};
   }
 
+  @media (max-width: ${DEVICE_BREAKPOINTS.XS}) {
+    > svg {
+      font-size: 2rem;
+    }
+  }
+
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     display: block;
   }
-`
+`;
